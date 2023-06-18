@@ -6,17 +6,18 @@
 }
 
 body {
-    background-color: #333;
+    background-color: #b950f5;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3em;
+    padding: 2em;
 }
 
 #calc {
-    width: 400px;
-    padding: .5em;
-    background-color: #c4c4c4;
+    width: 100%;
+    max-width: 400px;
+    padding: 1%;
+    background-color: #dbacff;
     color: #000;
     display: flex;
     flex-direction: column;
@@ -25,7 +26,7 @@ body {
 #calc h3 {
     font-size: .8em;
     font-weight: 300;
-    color: #666;
+    color: #777;
 }
 
 #operations {
@@ -49,7 +50,7 @@ body {
 
 #buttons-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 3px;
 }
 
@@ -57,7 +58,7 @@ body {
     border: 1px solid transparent;
     border-radius: 0;
     height: 4em;
-    font-size: 1, 2em;
+    font-size: 1.2em;
     background-color: #dbdbdb;
     cursor: pointer;
 }
@@ -67,16 +68,16 @@ body {
 }
 
 #buttons-container button:hover {
-    background-color: #bababa;
+    background-color: #a93ad8;
     border-color: #999;
 }
 
 #buttons-container #equal-btn {
     grid-column: span 2;
-    background-color: #75a5cb;
+    background-color: #dbacff;
 }
 
 #buttons-container #equal-btn:hover {
-    background-color: #3a91d8;
+    background-color: #a93ad8;
     grid-column: span 2;
 }
